@@ -321,13 +321,13 @@
 
         /* Column widths */
         .col-sno { width: 50px; text-align: center; font-weight: 600; color: var(--gray-400); }
-        .col-suite { min-width: 160px; }
-        .col-testname { min-width: 360px; }
-        .col-author { width: 100px; }
-        .col-group { width: 100px; }
-        .col-tags { min-width: 140px; }
-        .col-file { min-width: 180px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray-500); }
-        .col-starttime, .col-endtime { width: 150px; font-size: 12px; color: var(--gray-500); }
+        .col-suite { min-width: 120px; }
+        .col-testname { min-width: 280px; }
+        .col-author { width: 80px; }
+        .col-group { width: 80px; }
+        .col-tags { min-width: 120px; }
+        .col-file { min-width: 140px; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gray-500); }
+        .col-starttime, .col-endtime { width: 160px; font-size: 12px; color: var(--gray-500); }
         .col-duration { width: 80px; text-align: center; font-weight: 600; }
         .col-status { width: 100px; text-align: center; }
         .col-screenshot, .col-video, .col-trace { width: 80px; text-align: center; }
@@ -789,11 +789,11 @@
                 <div class="stat-label">Total Tests</div>
             </div>
             <div class="stat-card passed">
-                <div class="stat-value">1</div>
+                <div class="stat-value">0</div>
                 <div class="stat-label">Passed</div>
             </div>
             <div class="stat-card failed">
-                <div class="stat-value">0</div>
+                <div class="stat-value">1</div>
                 <div class="stat-label">Failed</div>
             </div>
             <div class="stat-card skipped">
@@ -801,11 +801,11 @@
                 <div class="stat-label">Skipped</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">100.0%</div>
+                <div class="stat-value">0.0%</div>
                 <div class="stat-label">Pass Rate</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">15s</div>
+                <div class="stat-value">9s</div>
                 <div class="stat-label">Duration</div>
             </div>
         </div>
@@ -830,11 +830,11 @@
             </div>
             <div class="meta-item">
                 <span class="meta-label">Run ID</span>
-                <span class="meta-value" style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">20260507_091801</span>
+                <span class="meta-value" style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">20260508_102814</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Started</span>
-                <span class="meta-value">May 07, 2026, 09:18:01</span>
+                <span class="meta-value">May 08, 2026, 10:28:14</span>
             </div>
         </div>
         
@@ -877,20 +877,20 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="test-row passed" data-test-id="test-52dcc34c3eb018a6eaf8-96bb986b1402d53e11b1" data-tags="">
+                <tr class="test-row failed" data-test-id="test-be28f094e663ca754a42-9e87816a00ee15c2b767" data-tags="">
                     <td class="col-sno">1</td>
                     <td class="col-suite">chromium</td>
                     <td class="col-testname">
-                        <span class="test-name-link" onclick="toggleTestDetail('test-52dcc34c3eb018a6eaf8-96bb986b1402d53e11b1')">Verify Book Appointment</span>
+                        <span class="test-name-link" onclick="toggleTestDetail('test-be28f094e663ca754a42-9e87816a00ee15c2b767')">Verify QA Profile Form</span>
                     </td>
                     <td class="col-author">TTA-QA</td>
                     <td class="col-group">chromium</td>
                     <td class="col-tags"></td>
-                    <td class="col-file">VWO_Login_getByRole.spec.ts:36</td>
-                    <td class="col-starttime">May 07, 2026, 09:18:01</td>
-                    <td class="col-endtime">May 07, 2026, 09:18:11</td>
-                    <td class="col-duration">10s</td>
-                    <td class="col-status"><span class="status-badge passed">Passed</span></td>
+                    <td class="col-file">QA_Profile_Form.spec.ts:4</td>
+                    <td class="col-starttime">May 08, 2026, 10:28:14</td>
+                    <td class="col-endtime">May 08, 2026, 10:28:20</td>
+                    <td class="col-duration">5s</td>
+                    <td class="col-status"><span class="status-badge failed">Failed</span></td>
                     <td class="col-screenshot">
                         <a href="screenshots/screenshot_1_1.png" target="_blank" class="screenshot-link">📷 View</a>
                     </td>
@@ -901,10 +901,55 @@
                         <a href="traces/trace_1.zip" target="_blank" class="trace-link-cell">📁 View</a>
                     </td>
                 </tr>
-                <tr class="test-detail-row" id="detail-row-test-52dcc34c3eb018a6eaf8-96bb986b1402d53e11b1" style="display: none;">
+                <tr class="test-detail-row" id="detail-row-test-be28f094e663ca754a42-9e87816a00ee15c2b767" style="display: none;">
                     <td colspan="14">
-                        <div class="test-detail" id="detail-test-52dcc34c3eb018a6eaf8-96bb986b1402d53e11b1">
+                        <div class="test-detail" id="detail-test-be28f094e663ca754a42-9e87816a00ee15c2b767">
                             <div class="detail-panel">
+            <div class="detail-section error-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <span class="section-arrow">▼</span> Errors
+                </div>
+                <div class="section-content">
+                    <div class="error-box">
+                        <pre class="error-message">Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoMatchObject[2m([22m[32mexpected[39m[2m)[22m
+
+[32m- Expected  - 1[39m
+[31m+ Received  + 0[39m
+
+[33m@@ -5,11 +5,10 @@[39m
+[2m      &quot;Australia&quot;,[22m
+[2m    ],[22m
+[2m    &quot;firstName&quot;: &quot;Satish&quot;,[22m
+[2m    &quot;gender&quot;: &quot;Male&quot;,[22m
+[2m    &quot;lastName&quot;: &quot;Kacharla&quot;,[22m
+[32m-   &quot;profession&quot;: &quot;Automation Tester&quot;,[39m
+[2m    &quot;tools&quot;: Array [[22m
+[2m      &quot;UFT&quot;,[22m
+[2m      &quot;Protractor&quot;,[22m
+[2m    ],[22m
+[2m    &quot;yearsExperience&quot;: &quot;5&quot;,[22m</pre>
+                        <details class="stack-details"><summary>Call Stack</summary><pre class="stack-trace-content">Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoMatchObject[2m([22m[32mexpected[39m[2m)[22m
+
+[32m- Expected  - 1[39m
+[31m+ Received  + 0[39m
+
+[33m@@ -5,11 +5,10 @@[39m
+[2m      &quot;Australia&quot;,[22m
+[2m    ],[22m
+[2m    &quot;firstName&quot;: &quot;Satish&quot;,[22m
+[2m    &quot;gender&quot;: &quot;Male&quot;,[22m
+[2m    &quot;lastName&quot;: &quot;Kacharla&quot;,[22m
+[32m-   &quot;profession&quot;: &quot;Automation Tester&quot;,[39m
+[2m    &quot;tools&quot;: Array [[22m
+[2m      &quot;UFT&quot;,[22m
+[2m      &quot;Protractor&quot;,[22m
+[2m    ],[22m
+[2m    &quot;yearsExperience&quot;: &quot;5&quot;,[22m
+    at validateSubmission (D:\Satish\projects\Playwright_Fundamentals\Playwright\tests\Assignments\QAForm\QA_Profile_Form.spec.ts:45:24)
+    at D:\Satish\projects\Playwright_Fundamentals\Playwright\tests\Assignments\QAForm\QA_Profile_Form.spec.ts:18:5</pre></details>
+                    </div>
+                </div>
+            </div>
             <div class="detail-section screenshots-section">
                 <div class="section-header" onclick="toggleSection(this)">
                     <span class="section-arrow">▼</span> Screenshots

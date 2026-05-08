@@ -5,5 +5,6 @@ export interface QAProfile {
     profession: string;
     tools?: string[];
     continents?: string[];
+    yearsExperience?: string;
 
 }

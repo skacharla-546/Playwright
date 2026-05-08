@@ -805,7 +805,7 @@
                 <div class="stat-label">Pass Rate</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">24s</div>
+                <div class="stat-value">14s</div>
                 <div class="stat-label">Duration</div>
             </div>
         </div>
@@ -830,11 +830,11 @@
             </div>
             <div class="meta-item">
                 <span class="meta-label">Run ID</span>
-                <span class="meta-value" style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">20260507_102919</span>
+                <span class="meta-value" style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">20260508_103236</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Started</span>
-                <span class="meta-value">May 07, 2026, 10:29:19</span>
+                <span class="meta-value">May 08, 2026, 10:32:36</span>
             </div>
         </div>
         
@@ -877,19 +877,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="test-row failed" data-test-id="test-e0d79c0a7fc07e4279dd-8ab68369a71d55bb8734" data-tags="">
+                <tr class="test-row failed" data-test-id="test-be28f094e663ca754a42-9e87816a00ee15c2b767" data-tags="">
                     <td class="col-sno">1</td>
                     <td class="col-suite">chromium</td>
                     <td class="col-testname">
-                        <span class="test-name-link" onclick="toggleTestDetail('test-e0d79c0a7fc07e4279dd-8ab68369a71d55bb8734')">Verify Bank Transfer</span>
+                        <span class="test-name-link" onclick="toggleTestDetail('test-be28f094e663ca754a42-9e87816a00ee15c2b767')">Verify QA Profile Form</span>
                     </td>
                     <td class="col-author">TTA-QA</td>
                     <td class="col-group">chromium</td>
                     <td class="col-tags"></td>
-                    <td class="col-file">TTA_Bank_Transfer.spec.ts:3</td>
-                    <td class="col-starttime">May 07, 2026, 10:29:19</td>
-                    <td class="col-endtime">May 07, 2026, 10:29:35</td>
-                    <td class="col-duration">16s</td>
+                    <td class="col-file">QA_Profile_Form.spec.ts:4</td>
+                    <td class="col-starttime">May 08, 2026, 10:32:36</td>
+                    <td class="col-endtime">May 08, 2026, 10:32:46</td>
+                    <td class="col-duration">10s</td>
                     <td class="col-status"><span class="status-badge failed">Failed</span></td>
                     <td class="col-screenshot">
                         <a href="screenshots/screenshot_1_1.png" target="_blank" class="screenshot-link">📷 View</a>
@@ -901,9 +901,9 @@
                         <a href="traces/trace_1.zip" target="_blank" class="trace-link-cell">📁 View</a>
                     </td>
                 </tr>
-                <tr class="test-detail-row" id="detail-row-test-e0d79c0a7fc07e4279dd-8ab68369a71d55bb8734" style="display: none;">
+                <tr class="test-detail-row" id="detail-row-test-be28f094e663ca754a42-9e87816a00ee15c2b767" style="display: none;">
                     <td colspan="14">
-                        <div class="test-detail" id="detail-test-e0d79c0a7fc07e4279dd-8ab68369a71d55bb8734">
+                        <div class="test-detail" id="detail-test-be28f094e663ca754a42-9e87816a00ee15c2b767">
                             <div class="detail-panel">
             <div class="detail-section error-section">
                 <div class="section-header" onclick="toggleSection(this)">
@@ -911,33 +911,16 @@
                 </div>
                 <div class="section-content">
                     <div class="error-box">
-                        <pre class="error-message">Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m failed
+                        <pre class="error-message">Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
 
-Locator:  locator(&#039;//span[text()=\&#039;Amount\&#039;]/following-sibling::span&#039;)
-Expected: [32m&quot;$5[7m,[27m000.00&quot;[39m
-Received: [31m&quot;$5000.00&quot;[39m
-Timeout:  5000ms
+Expected: [32m&quot;Automation Tester&quot;[39m
+Received: [31mundefined[39m</pre>
+                        <details class="stack-details"><summary>Call Stack</summary><pre class="stack-trace-content">Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoEqual[2m([22m[32mexpected[39m[2m) // deep equality[22m
 
-Call log:
-[2m  - Expect &quot;toHaveText&quot; with timeout 5000ms[22m
-[2m  - waiting for locator(&#039;//span[text()=\&#039;Amount\&#039;]/following-sibling::span&#039;)[22m
-[2m    9 × locator resolved to &lt;span class=&quot;text-xl font-bold text-slate-800&quot;&gt;$5000.00&lt;/span&gt;[22m
-[2m      - unexpected value &quot;$5000.00&quot;[22m
-</pre>
-                        <details class="stack-details"><summary>Call Stack</summary><pre class="stack-trace-content">Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m failed
-
-Locator:  locator(&#039;//span[text()=\&#039;Amount\&#039;]/following-sibling::span&#039;)
-Expected: [32m&quot;$5[7m,[27m000.00&quot;[39m
-Received: [31m&quot;$5000.00&quot;[39m
-Timeout:  5000ms
-
-Call log:
-[2m  - Expect &quot;toHaveText&quot; with timeout 5000ms[22m
-[2m  - waiting for locator(&#039;//span[text()=\&#039;Amount\&#039;]/following-sibling::span&#039;)[22m
-[2m    9 × locator resolved to &lt;span class=&quot;text-xl font-bold text-slate-800&quot;&gt;$5000.00&lt;/span&gt;[22m
-[2m      - unexpected value &quot;$5000.00&quot;[22m
-
-    at D:\Satish\projects\Playwright_Fundamentals\Playwright\tests\Assignments\TTA_Bank_Transfer.spec.ts:16:83</pre></details>
+Expected: [32m&quot;Automation Tester&quot;[39m
+Received: [31mundefined[39m
+    at validateSubmission (D:\Satish\projects\Playwright_Fundamentals\Playwright\tests\Assignments\QAForm\QA_Profile_Form.spec.ts:49:35)
+    at D:\Satish\projects\Playwright_Fundamentals\Playwright\tests\Assignments\QAForm\QA_Profile_Form.spec.ts:19:5</pre></details>
                     </div>
                 </div>
             </div>

@@ -789,7 +789,7 @@
                 <div class="stat-label">Total Tests</div>
             </div>
             <div class="stat-card passed">
-                <div class="stat-value">1</div>
+                <div class="stat-value">0</div>
                 <div class="stat-label">Passed</div>
             </div>
             <div class="stat-card failed">
@@ -797,15 +797,15 @@
                 <div class="stat-label">Failed</div>
             </div>
             <div class="stat-card skipped">
-                <div class="stat-value">0</div>
+                <div class="stat-value">1</div>
                 <div class="stat-label">Skipped</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">100.0%</div>
+                <div class="stat-value">0.0%</div>
                 <div class="stat-label">Pass Rate</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">20s</div>
+                <div class="stat-value">21s</div>
                 <div class="stat-label">Duration</div>
             </div>
         </div>
@@ -830,11 +830,11 @@
             </div>
             <div class="meta-item">
                 <span class="meta-label">Run ID</span>
-                <span class="meta-value" style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">20260507_100835</span>
+                <span class="meta-value" style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">20260508_102501</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Started</span>
-                <span class="meta-value">May 07, 2026, 10:08:35</span>
+                <span class="meta-value">May 08, 2026, 10:25:01</span>
             </div>
         </div>
         
@@ -877,22 +877,22 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="test-row passed" data-test-id="test-e0d79c0a7fc07e4279dd-8ab68369a71d55bb8734" data-tags="">
+                <tr class="test-row skipped" data-test-id="test-be28f094e663ca754a42-9e87816a00ee15c2b767" data-tags="">
                     <td class="col-sno">1</td>
                     <td class="col-suite">chromium</td>
                     <td class="col-testname">
-                        <span class="test-name-link" onclick="toggleTestDetail('test-e0d79c0a7fc07e4279dd-8ab68369a71d55bb8734')">Verify Bank Transfer</span>
+                        <span class="test-name-link" onclick="toggleTestDetail('test-be28f094e663ca754a42-9e87816a00ee15c2b767')">Verify QA Profile Form</span>
                     </td>
                     <td class="col-author">TTA-QA</td>
                     <td class="col-group">chromium</td>
                     <td class="col-tags"></td>
-                    <td class="col-file">TTA_Bank_Transfer.spec.ts:3</td>
-                    <td class="col-starttime">May 07, 2026, 10:08:35</td>
-                    <td class="col-endtime">May 07, 2026, 10:08:51</td>
-                    <td class="col-duration">15s</td>
-                    <td class="col-status"><span class="status-badge passed">Passed</span></td>
+                    <td class="col-file">QA_Profile_Form.spec.ts:4</td>
+                    <td class="col-starttime">May 08, 2026, 10:25:01</td>
+                    <td class="col-endtime">May 08, 2026, 10:25:20</td>
+                    <td class="col-duration">18s</td>
+                    <td class="col-status"><span class="status-badge skipped">Skipped</span></td>
                     <td class="col-screenshot">
-                        N/A
+                        <a href="screenshots/screenshot_1_1.png" target="_blank" class="screenshot-link">📷 View</a>
                     </td>
                     <td class="col-video">
                         <a href="videos/video_1.webm" target="_blank" class="video-link-cell">▶️ Play</a>
@@ -901,10 +901,72 @@
                         <a href="traces/trace_1.zip" target="_blank" class="trace-link-cell">📁 View</a>
                     </td>
                 </tr>
-                <tr class="test-detail-row" id="detail-row-test-e0d79c0a7fc07e4279dd-8ab68369a71d55bb8734" style="display: none;">
+                <tr class="test-detail-row" id="detail-row-test-be28f094e663ca754a42-9e87816a00ee15c2b767" style="display: none;">
                     <td colspan="14">
-                        <div class="test-detail" id="detail-test-e0d79c0a7fc07e4279dd-8ab68369a71d55bb8734">
+                        <div class="test-detail" id="detail-test-be28f094e663ca754a42-9e87816a00ee15c2b767">
                             <div class="detail-panel">
+            <div class="detail-section error-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <span class="section-arrow">▼</span> Errors
+                </div>
+                <div class="section-content">
+                    <div class="error-box">
+                        <pre class="error-message">Error: locator.click: Test ended.
+Call log:
+[2m  - waiting for getByText(&#039;5&#039;, { exact: true })[22m
+[2m    - locator resolved to &lt;option&gt;5&lt;/option&gt;[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    26 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is not visible[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+</pre>
+                        <details class="stack-details"><summary>Call Stack</summary><pre class="stack-trace-content">Error: locator.click: Test ended.
+Call log:
+[2m  - waiting for getByText(&#039;5&#039;, { exact: true })[22m
+[2m    - locator resolved to &lt;option&gt;5&lt;/option&gt;[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    26 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is not visible[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+    at fillQAPersonalInfo (D:\Satish\projects\Playwright_Fundamentals\Playwright\tests\Assignments\QAForm\QA_Profile_Form.spec.ts:28:76)
+    at D:\Satish\projects\Playwright_Fundamentals\Playwright\tests\Assignments\QAForm\QA_Profile_Form.spec.ts:17:5</pre></details>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-section screenshots-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <span class="section-arrow">▼</span> Screenshots
+                </div>
+                <div class="section-content">
+                    <div class="screenshots-grid">
+                    <div class="screenshot-item">
+                        <a href="screenshots/screenshot_1_1.png" target="_blank" class="screenshot-link">
+                            <img src="screenshots/screenshot_1_1.png" alt="screenshot" class="screenshot-preview"/>
+                        </a>
+                        <div class="screenshot-name">📎 screenshot</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
             <div class="detail-section traces-section">
                 <div class="section-header" onclick="toggleSection(this)">
                     <span class="section-arrow">▼</span> Traces
